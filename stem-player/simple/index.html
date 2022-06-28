@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stem Player Examples | Simple</title>
+    <script src="https://cdn.soundwebservices.net/assets/stem-player/1.1.0/sound-ws-stems-player-community.js"></script>
+    <script>
+      SoundWS.StemsPlayer.config.baseProductUrl =
+        'https://blobr.soundwebservices.net/12ry9ycsvewtcoa7/';
+
+      SoundWS.StemsPlayer.config.fetchOptions = {
+        headers: {
+          'X-BLOBR-KEY': 'pVsh9NJRySldkg8LTvYHg3aWIISnStI9',
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <soundws-stem-player row-height="60px" max-height="400">
+      <soundws-stem-player-controls label="Funk Demo" slot="header"></soundws-stem-player-controls>
+      <soundws-stem
+        label="Guitar A"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Guitar_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Guitar B"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Guitar_2.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Organ"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Organ_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Bass"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Organ_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Cowbell"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Cowbell_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Casaba"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Casaba_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Congas"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Congas_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Drums A"
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Drums_1.mp3"
+      >
+      </soundws-stem>
+      <soundws-stem
+        label="Drums B  "
+        audio-src="https://d2m8h53em6mi65.cloudfront.net/default/drumsv2/mp3/Stem_Drums_2.mp3"
+      >
+      </soundws-stem>
+    </soundws-stem-player>
+  </body>
+</html>
