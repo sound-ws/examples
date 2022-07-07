@@ -5,12 +5,11 @@
     <title>Stem Player Examples | Simple</title>
     <script src="https://cdn.soundwebservices.net/assets/stem-player/1.1.0/sound-ws-stems-player-community.js"></script>
     <script>
-      SoundWS.StemsPlayer.config.baseProductUrl =
-        'https://blobr.soundwebservices.net/12ry9ycsvewtcoa7/';
+      SoundWS.StemsPlayer.config.apiEndpoint = 'https://v1.api.us-east-1.soundwebservices.net';
 
       SoundWS.StemsPlayer.config.fetchOptions = {
         headers: {
-          'X-BLOBR-KEY': 'pVsh9NJRySldkg8LTvYHg3aWIISnStI9',
+          Authorization: 'Bearer: %YOUR_API_KEY%',
         },
       };
     </script>
